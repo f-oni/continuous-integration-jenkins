@@ -1,0 +1,32 @@
+
+Confirm availability of Maven on your local system with the command $mvn --version
+If not present, install it.
+
+GENERATING A PROJECT
+Run the following command in the terminal/command prompt $ mvn archetype:generate
+Provide appropriate responses to the following prompt:
+GroupId(package name), sample response; com.company.sample
+ArtifactId(name of your project), sample response; myApp1
+Version(default version is 1.0), press enter to go with the default
+
+Maven lifecycle
+This is a process for building and distributing artifacts of a particular project
+1 Validate: Confirms that all necessary information is available.$mvn validate
+2. Compile: Compiles the source code of the project. $mvn compile
+3. Test: Tests the compiled source code using a suitable unit
+ testing framework and executes all unit test cases. $mvn test.
+4. Package: validates, compiles, tests and package your 
+code in a distributable format. $mvn package.
+5. Integration-test: processes and deploys the package into an environment 
+where integration tests can be run
+6. Verify: runs any checks to verify the package is valid and meets quality criteria
+7. Install: installs the package into the local repository, for use as a dependency in other projects locally
+8. Deploy: This is done in an integration or release environment, copies the final package to the remote 
+repository for sharing with other developers and projects.
+9. Clean: cleans up artifacts created by prior builds. all unnecessary files are removed
+10. Site: generates site documentation for this project
+
+RUN THE PROJECT LOCALLY
+Run any of the Maven goals as outlined above.
+push to github
+
